@@ -38,7 +38,7 @@ const DepartmentList= ()=>{
                 {getDepartment.map(a=>(
                     <tr>
                         <td>{a.name}</td>
-                        <td> <Link to={`/Department/${a.id}`} className="btn btn-primary"  > Edit</Link> | 
+                        <td> <Link to={`/Department/Create/${a.id}`} className="btn btn-primary"  > Edit</Link> | 
                         <button className="btn btn-danger" onClick={()=> onDeleteRow(a.id)}>Delete </button> </td>
                      
                     </tr>
